@@ -21,7 +21,7 @@ resource "aws_instance" "jenkins" {
 
 resource "aws_instance" "jenkins_agent" {
   ami           = local.ami_id
-  instance_type = "t3.small"
+  instance_type = "t3.micro"
   vpc_security_group_ids = [aws_security_group.main.id]
   subnet_id = "subnet-084c436a3a9d99dce" #replace your Subnet
 

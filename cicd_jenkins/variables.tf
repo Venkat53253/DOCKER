@@ -8,7 +8,7 @@ variable "environment" {
 
 variable "zone_name" {
   type        = string
-  default     = "venaws.site"
+  default     = "venaws.in"
   description = "description"
 }
 
